@@ -13,9 +13,20 @@ void MLP::readStructure(string fileName="") {
     {
         string line;
         nbLayer = 0;
+        int numLayer = 0;
+        int nbNeuron;
+
         while (getline (myfile,line)) {
             cout << line << endl;
+            nbNeuron = std::stoi(line);
+            cout << nbNeuron << endl;
+
+            int curLayValue[nbNeuron];
+            curValue.push_back(curLayValue);
+
             nbLayer++;
+            numLayer++;
+
         }
         myfile.close();
     }

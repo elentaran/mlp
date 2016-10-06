@@ -1,5 +1,5 @@
 EXEC=mlp
-CC=g++
+CC=g++ -std=c++11
 SRC=$(wildcard *.cpp)
 HD=$(wildcard *.h)
 OBJ=$(SRC:.cpp=.o)

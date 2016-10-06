@@ -1,6 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include <vector>
 
 using namespace std;
 
@@ -18,7 +19,9 @@ const string fileStructure = "default.st";
 class MLP {
     private:
         int nbLayer;
-        int* nbNeuronPL;
+        vector<int* > curValue;
+        vector<int** > wheight;
+
 
 
 
